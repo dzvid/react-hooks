@@ -10,4 +10,10 @@ yarn add --dev eslint-plugin-react-hooks
 
 ---
 
-2
+Hooks:
+
+- useState: returns an item and a method to update its value;
+- useEffect:
+  - An useEffect with dependencies is equivalent to componentDidUpdate()
+  - An useEffect with empty dependencies is equivalent to componentDidMount()
+
