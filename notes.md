@@ -16,4 +16,6 @@ Hooks:
 - useEffect:
   - An useEffect with dependencies is equivalent to componentDidUpdate()
   - An useEffect with empty dependencies is equivalent to componentDidMount()
+- useMemo: useMemo will only recompute the memoized value when one of the deps has changed.
+
 
