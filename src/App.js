@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 
 function App() {
   const [techs, setTechs] = useState([]);
   const [newTech, setNewTech] = useState('');
 
-  function handleAdd() {
+  const handleAdd = useCallback(() => {
     setTechs([...techs, newTech]);
     setNewTech('');
-  }
+  }, [newTech, techs]);
 
   // Retrieve techs from localstorage when component did mount
   useEffect(() => {
